@@ -1,8 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  devtools: { enabled: true },
+  devtools: {
+    enabled: true,
+  },
   typescript: {
     strict: true,
   },
-  css: ["~/assets/styles/reset.css", "~/assets/styles/globals.css"],
+  build: {
+    transpile: ["@fortawesome/vue-fontawesome"],
+  },
+  css: [
+    "~/assets/styles/reset.css",
+    "~/assets/styles/globals.css",
+    "@fortawesome/fontawesome-svg-core/styles.css",
+  ],
 });

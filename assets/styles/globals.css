@@ -51,12 +51,6 @@ button {
 input::placeholder {
   font-family: "Futura", sans-serif;
 }
-#__nuxt {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
 
 .wrapper {
   max-width: 186rem;
